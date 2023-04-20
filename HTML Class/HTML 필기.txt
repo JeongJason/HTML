@@ -1,0 +1,104 @@
+==HTML (Hyper Text Markup Language)==
+
+Hyper text - 특정문서와 문서를 연결해주는 문자.
+
+
+<!DOCTYPE html>						Document 형식을 나타냄 - html 문서임을 선언함.
+<html lang="en">						html 언어를 선언함.
+<head>							-> head 문서의 메타데터와 제목등을 포함하는 머릿말.
+    <meta charset="UTF-8">					--> 문서의 문자 인코딩을 UTF-8(한글)로 설정
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">	--> 브라우저 호환성 설정.
+    <meta name="viewport" content="width=, initial-scale=1.0">	--> 모바일 웹에서도 볼수있도록 설정
+    <title>Document</title>					title --> 문서의 제목.
+</head>
+<body>							body -> 문서의 본문
+    
+</body>
+</html>
+
+==제목
+<h1> (내용) </h1>
+
+==수평줄 긋는법
+<hr> (내용) </hr>
+<hr />
+
+==줄봐꿈
+(내용) <br/>
+
+==p태그 / div태그 / span태그
+p태그 - 상위와 하위에 라인하나씩을 두고 블록형태로 한라인 사용
+div태그 - 상하위 라인없이 블록형태로 한라인을 사용
+
+p태그 block형태(한라인전체 차지), 위아래 공백추가
+div태그 block형태
+span태그 inline형 태그(추가 옵션이 없으면 아무 효과도없음)
+-->ex <span style="font-size:2rem;color:blue">구조적</span>
+
+
+==엔티티
+&nbsp; -> 공백문자(space)
+일반적으로 띄어쓰기를 여러번해도 한번만 표현함 그래서 
+따로 space 엔티티를 사용해서 공백을 표현해야함.
+
+
+==UL 태그 / OL 태그
+>>both Block형
+ul태그는 순서가 없는리스트
+ol태그는 순서가있는 리스트 => type변경할수있음 ex a,i,I,1
+
+ Korean 확인
+        Beautify 확인 : shift + alt + f => 코드들을 계층에 맞게 정렬해줌.
+        auto rename tag 확인
+        live server 확인 켜기 alt+L+O / 끄기alt+L+C
+        공백 설정 하기
+
+
+==table
+<style>  --> Table 각 부분별로 크기나 색상 배치를 설정할수있음.
+	table{
+	width : 400px;
+	height : 300px;
+	border : 1px solid gray
+	}
+	td{
+	border : 1px solid green
+	}
+</style>
+<table>
+	<canption><h2>테이블 제목</h2></canption>
+	<tr> --> 세로칸수
+		<td>가로 칸수
+		</td>
+	</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

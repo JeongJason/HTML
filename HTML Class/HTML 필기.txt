@@ -66,14 +66,27 @@ ol태그는 순서가있는 리스트 => type변경할수있음 ex a,i,I,1
 	}
 </style>
 <table>
-	<canption><h2>테이블 제목</h2></canption>
+	<caption><h2>테이블 제목</h2></canption>
 	<tr> --> 세로칸수
 		<td>가로 칸수
 		</td>
 	</tr>
 </table>
 
+==A태그
+ <a href="https://www.naver.com/">Naver</a><br>
+<iframe width="500px" height="500px" name="frm1"></iframe>
 
+===Video태그
+<video></video>
+옵션
+autoplay -> 단. 음소거옵션을 넣지않으면 자동재생이 되지않음.
+muted -> 음소거기능
+loot -> 무한 반복
+
+
+Form태그
+Button태그
 
 
 

@@ -89,8 +89,11 @@ Form태그
 Button태그
 
 
-
-
+==Pattern 태그
+유효성 검사
+validation check 
+- front End(JS)
+- Back End(Jsp, Servlet,Spring...)
 
 
 

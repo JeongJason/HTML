@@ -1,0 +1,9 @@
+선택자(selector)
+
+box
+margin, padding, border, content
+box-sizing
+
+position
+static relative absolute, fixed, stricky
+

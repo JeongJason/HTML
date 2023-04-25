@@ -1,0 +1,19 @@
+1. 기본 CSS
+단위
+문자 간격
+높이 너비
+글꼴
+...
+
+2. Box
+margin, padding, width, height, border, box-sizing
+
+3. selector
+
+4. position
+
+5. layout - flex...
+
+6. mediaQuery
+
+7. animation

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 전체선택자 */
+        *{
+            margin: 40px;
+        }
+        /* 요소 선택자 */
+        div{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+        }
+        p{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        /* id 선택자 */
+        #d1{
+            background-color: pink;
+        }
+        /* class 선택자 */
+        .group1{
+            font-size: 1.5rem;
+        }
+        /* , 그룹선택자 */
+        .group1{
+            color: red;
+           
+            /* 왜 보더색상까지 같이 적용되는지? */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="group1">aa</div>
+    <div id="d1">dssfdf</div>
+    <div></div>
+    <p class="group1">p테그</p>
+    <span class="group1">bb</span>
+    
+
+
+</body>
+
+</html>

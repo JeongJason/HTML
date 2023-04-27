@@ -1,4 +1,4 @@
-선택자(selector)
+오전 10:42 2023-04-26선택자(selector)
 
 box
 margin, padding, border, content
@@ -7,3 +7,26 @@ box-sizing
 position
 static relative absolute, fixed, stricky
 
+
+
+d1클래스
+글자 크기 root를 기준으로 3배수
+글자 색상 white
+글자 간격 30px
+글자 수평 중앙배치
+글자 수직 중앙배치
+
+d2클래스
+글자 크기 상위 태그를 기준으로 2배수
+글자 색상 green
+글자 수평 중앙배치
+글자 수직 중앙배치
+가로 너비 300
+세로 너비 200
+d2클래스 태그는 브라우저 가로 중앙배치
+
+d3클래스
+가로 너비 300
+세로 너비 300
+d2태그와의 거리를 50px로 설정
+content와의 거리를 30px로 설정

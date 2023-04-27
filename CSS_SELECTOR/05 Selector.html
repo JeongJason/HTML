@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .d1 {}
+
+        .d1>input[type="checkbox"]{
+            display: none;
+        }
+
+        .d1>label {
+            display: block;
+            width: 45px;
+            height: 45px;
+            /* border: 1px solid black; */
+            background-image: url(./css_image/radio_button_unchecked_FILL0_wght400_GRAD0_opsz48.svg);
+            background-size: 100%;
+        }
+        .d1>input[type="checkbox"]:checked+label{
+            background-image: url("./css_image/radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg");
+        }
+
+        .d2{}
+        .d2>input[type="radio"]{
+            display: none;
+        }
+        .d2>label{
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+        #r1:checked+label{
+            background-image: url(./css_image/male.svg);
+            background-size: 100%;
+        }
+        #r2:checked+label{
+            background-image: url(./css_image/female.svg);
+            background-size: 100%;
+        }
+        .d2>input{}
+
+        .d3{}
+
+        .d3>input[type='checkbox']{
+            display: none;
+        }
+        
+        .d3>label{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        #climing:checked+label{
+            background-image: url('./css_image/climming.svg');
+            background-size: 100%;
+        }
+        #swimming:checked+label{
+            background-image: url('./css_image/swimming.svg');
+            background-size: 100%;
+        }
+        #camping:checked+label{
+            background-image: url('./css_image/camping.svg');
+            background-size: 100%;
+        }
+        #cycling:checked+label{
+            background-image: url('./css_image/cycling.svg');
+            background-size: 100%;
+        }
+
+        .s1>span{
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="d1">
+        <input type="checkbox" id="chk1"><label for="chk1"></label><br/>
+    </div>
+    <div class="d2">
+        <input type="radio" name="gender" value="male" id="r1"><label for="r1"></label>
+        <input type="radio" name="gender" value="female" id="r2"><label for="r2"></label>
+    </div>
+
+    <hr>
+
+    <div class="s1">
+        <span>등산</span>
+        <span>수영</span>
+        <span>캠핑</span>
+        <span>사이클</span>
+    </div>
+
+    <div class="d3">
+        <input type="checkbox" id="climing"><label for="climing"></label>
+        <input type="checkbox" id="swimming"><label for="swimming"></label>
+        <input type="checkbox" id="camping"><label for="camping"></label>
+        <input type="checkbox" id="cycling"><label for="cycling"></label>
+    </div>
+
+
+
+</body>
+
+</html>

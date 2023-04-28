@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        z-index : position이 설덩된 형제요소간의 dythrksdml z축의 우선순위를 지정할 때 사용.
+    z-index는 같은 level간에 position이 설정되어있는상태에서 설정이가능하다.
+    기본 z-index는 0이다.
+ -->
+    <style>
+        *{
+            margin: 5px;
+        }
+        .parent {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: orange;
+            z-index: 1;
+        }
+
+        .son1 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            top: 50px;
+            z-index: 10;
+        }
+        .son2 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background-color: rgb(33, 175, 47);
+        }
+        .son3 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background-color: rgb(149, 25, 103);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="son1"></div>
+        <div class="son2"></div>
+        <div class="son3"></div>
+    </div>
+</body>
+
+</html>

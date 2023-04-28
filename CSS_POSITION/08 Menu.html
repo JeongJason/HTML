@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{}
+        body{}
+        a{}
+        ul{
+            list-style: none;
+            padding: 0px;
+        }
+        .one--depth{
+            border: 1px solid black;
+            width: 200px;
+        }
+        .one--depth>li{
+            border: 1px solid orange;
+            position: relative;
+        }
+        .one--depth>li>a{
+            border: 1px solid lightblue;
+            display: block;
+        }
+        .one--depth>li>.two--depth{
+            border: 1px solid green;
+            position: absolute;
+            width: 100%;
+            left: 200px;
+            top: 0;
+            display: none;
+        }
+        .one--depth>li>.two--depth>li{}
+        .one--depth>li>.two--depth>li>a{}
+        
+        .one--depth>li:hover .two--depth{
+            display: block;
+        }
+        .one--depth>li>.two--depth>li>.three--depth{
+            border: 1px solid pink;
+            position: absolute;
+            width: 100%;
+            left: 200px;
+            top: 0;
+            display: none;
+        }
+        .one--depth>li>.two--depth>li:hover .three--depth{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="one--depth">
+        <li>
+            <a href="">menu1</a>
+            <ul class="two--depth">
+                <li>
+                    <a href="">submenu</a>
+                    <ul class="three--depth">
+                        <li><a href="">subsubmene</a></li>
+                        <li><a href="">subsubmene</a></li>
+                        <li><a href="">subsubmene</a></li>
+                        <li><a href="">subsubmene</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">submenu</a>
+                    <ul class="three--depth">
+                        <li><a href="">subsubmene1</a></li>
+                        <li><a href="">subsubmene1</a></li>
+                        <li><a href="">subsubmene1</a></li>
+                        <li><a href="">subsubmene1</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">submenu</a>
+                    <ul class="three--depth">
+                        <li><a href="">subsubmene2</a></li>
+                        <li><a href="">subsubmene2</a></li>
+                        <li><a href="">subsubmene2</a></li>
+                        <li><a href="">subsubmene2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">submenu</a>
+                    <ul class="three--depth">
+                        <li><a href="">subsubmene3</a></li>
+                        <li><a href="">subsubmene3</a></li>
+                        <li><a href="">subsubmene3</a></li>
+                        <li><a href="">subsubmene3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="">menu2</a>
+            <ul class="two--depth">
+                <li><a href="">submenu</a></li>
+                <li><a href="">submenu</a></li>
+                <li><a href="">submenu</a></li>
+                <li><a href="">submenu</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">menu3</a>
+            <ul class="two--depth">
+                <li><a href="">submenu</a></li>
+                <li><a href="">submenu</a></li>
+                <li><a href="">submenu</a></li>
+                <li><a href="">submenu</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">menu4</a>
+            <ul class="two--depth">
+                <li><a href="">submenu</a></li>
+                <li><a href="">submenu</a></li>
+                <li><a href="">submenu</a></li>
+                <li><a href="">submenu</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

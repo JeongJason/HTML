@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        header{
+            height: 90px;
+            /* border: 1px solid gray; */
+            border-bottom: 1px solid lightgray;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 120px;
+        }
+        header>.header--logo{
+            /* height: 55px; */
+            width: 99px;
+            display: flex;
+            align-items: center;
+        }
+        ul{
+            list-style: none;
+            padding: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        /* 헤더 GNB */
+        header>.gnb{
+            /* border: 1px solid red; */
+            width: 1000px;
+        }
+        header>.gnb>.one--depth{
+            width: 100%;
+            display: flex;
+            justify-content: right;
+            margin: 0px;
+        }
+        header>.gnb>.one--depth>li{
+            width: 120px;
+            height: 90px;
+            list-style: 90px;
+            /* border: 1px solid gray; */
+            text-align: center;
+            position: relative;
+        }
+        header>.gnb>.one--depth>li>a{
+            line-height: 90px;
+            display: block;
+        }
+        header>.gnb>.one--depth>li>.two--depth{
+            position: absolute;
+            border: 1px solid gray;
+            top:90px;
+            left: 0px;
+            width: 100%;
+            display: none;
+            border-radius: 15px;
+            background-color: greenyellow;
+        }
+        header>.gnb>.one--depth>li>.two--depth>li{
+            height: 50px;
+            font-size: 25px;
+        }
+        header>.gnb>.one--depth>li>.two--depth>li>a{}
+
+        header>.gnb>.one--depth>li:hover .two--depth{
+            display: block;
+        }
+        header>.gnb>.one--depth>li>.two--depth::before{
+            content: "🌐";
+            height: 50px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header--logo">
+            <img src="./logo.svg" alt="">
+        </div>
+        <nav class="gnb">
+            <ul class="one--depth">
+                <li>
+                    <a href="">A</a>
+                    <ul class="two--depth">
+                        <li><a href="">Information</a></li>
+                        <li><a href="">Background</a></li>
+                        <li><a href="">Vison</a></li>
+                        <li><a href="">History</a></li>
+                        <li><a href="">Skills</a></li>
+                        <li><a href="">Finance</a></li>
+                        <li><a href="">Partner</a></li>
+                        <li><a href="">Map</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">B</a>
+                    <ul class="two--depth">
+                        <li><a href="">a</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">C</a>
+                    <ul class="two--depth">
+                        <li><a href=""></a>a</li>
+                        <li><a href=""></a>ab</li>
+                        <li><a href=""></a>abc</li>
+                        <li><a href=""></a>abcd</li>
+                        <li><a href=""></a>dcba</li>
+                        <li><a href=""></a>bca</li>
+                        <li><a href=""></a>a</li>
+                        <li><a href=""></a>123</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">D</a>
+                    <ul class="two--depth">
+                        <li><a href="">123</a></li>
+                        <li><a href="">234</a></li>
+                        <li><a href="">3456</a></li>
+                        <li><a href="">17890</a></li>
+                        <li><a href="">4352</a></li>
+                        <li><a href="">11</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div><a href="">GNB link</a></div>
+    </header>
+    
+</body>
+</html>

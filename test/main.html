@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 10px;
+        }
+        ul{
+            list-style: none;
+            padding: 5px;
+        }
+        header{
+
+            border: 1px solid lightgray;
+            display: flex;
+            justify-content: space-around;
+        }
+        header>.left--header{
+            width: 700px;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid;
+        }
+        header>.left--header>img{
+            background-size: contain;
+            border: 1px solid;
+            height: 50px;
+            width: 200px;
+        }
+        header>.left--header>nav{
+            flex-grow: 1;
+            border: 1px solid;
+            margin: auto;
+            
+        }
+
+        header>.left--header>nav>.first--depth{
+            border: 1px solid;
+            display: flex;
+            align-content: center;
+            
+        }
+        header>.left--header>nav>.first--depth>li{
+            display: inline-block;
+        }
+        header>.left--header>nav>.first--depth>li>.second--depth{
+            display: none;
+        }
+        header>.left--header>nav>.first--depth:hover .second--depth{
+            display: block;
+        } 
+        header>.right--header>input{
+            background-color: lightgray;
+            width: 300px;
+            height: 50px;
+            border-radius: 15px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left--header">
+            <img src="/test/img/logo.svg" alt="LOGO">
+            <nav>
+                <ul class="first--depth">
+                    <li>적성도 검사</li>
+                    <li>나의 강의
+                        <ul class="second--depth">
+                            <li>ALL</li>
+                            <li>웹 개발</li>
+                            <li>프론트엔드</li>
+                            <li>백엔드</li>
+                            <li>풀스택</li>
+                        </ul>
+                    </li>
+                    <li>강의목록</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right--header">
+            <input type="text">
+            <button>회원가입</button>
+            <button>로그인</button>
+        </div>
+
+    </header>
+    <main>
+        <section></section>
+        <section></section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

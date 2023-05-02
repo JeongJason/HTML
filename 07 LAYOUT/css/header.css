@@ -1,0 +1,13 @@
+.wrapper>header{
+    height: 100px;
+    border: 1px solid black;
+}
+
+.wrapper>header>.top--header{
+    height: 40px;
+    border: 1px solid black;
+}
+.wrapper>header>nav{
+    height: 50px;
+    border: 1px solid black;
+}

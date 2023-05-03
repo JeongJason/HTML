@@ -1,0 +1,74 @@
+header{
+    height: 150px;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    justify-content: space-around;
+    padding-top: 35px;
+}
+.left--header{
+    display: flex;
+    justify-content: space-around;
+}
+.left--header>img{
+    height: 80px;
+    width: 300px;
+}
+.left--header>nav{
+    /* border: 1px solid; */
+    height: 100px;
+    margin-left: 20px;
+
+}
+.left--header>nav>.first--depth{
+    display: flex;
+    /* border: 1px solid; */
+    height: 80px;
+    line-height: 80px;
+    font-size: 20px;
+}
+.left--header>nav>.first--depth>li{
+    margin: 0px 15px;
+}
+.left--header>nav>.first--depth>li>a{}
+.left--header>nav>.first--depth>li>.second--depth{
+    display: none;
+}
+.left--header>nav>.first--depth:hover .second--depth{
+    display: block;
+}
+.left--header>nav>.first--depth>li>.second--depth>li{}
+.left--header>nav>.first--depth>li>.second--depth>li>a{}
+.right--header{
+    padding-top: 5px;
+    display: flex;
+}
+.right--header>form>input{
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    margin-top: 8px;
+    position: absolute;
+}
+.right--header>form{
+    position: relative;
+    /* display: block; */
+    width: 300px;
+    height: 60px;
+}
+.right--header>form>button{
+    position: absolute;
+}
+.right--header>.login{
+    /* border: 1px solid black; */
+    margin-left: 15px;
+    height: 70px;
+    line-height: 70px;
+    /* display: block; */
+    width: 300px;
+    height: 60px;
+}
+.right--header>.login>button{
+    width: 100px;
+    height: 55px;
+
+}

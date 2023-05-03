@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            perspective: 1000px;
+            /* border: 1px solid; */
+            width: 200px;
+            height: 200px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .container>.card {
+            width: 200px;
+            height: 200px;
+            position: relative;
+
+            transform-style: preserve-3d;
+            transition: 1s;
+        }
+
+        .container>.card>.front,
+        .container>.card>.back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            backface-visibility: hidden;
+            border-radius: 50%;
+        }
+
+        .container>.card>.front {
+            background-image: url(https://img.danawa.com/prod_img/500000/609/014/img/3014609_1.jpg?shrink=330:*&_v=20220524144914);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container>.card>.back {
+            background-color: aqua;
+            transform: rotateY(180deg);
+            text-align: center;
+            line-height: 200px;
+            box-shadow: 15px 15px 15px lightgray;
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front">front</div>
+            <div class="back">아이스 아메리카노 할인</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

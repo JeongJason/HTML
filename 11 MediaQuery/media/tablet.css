@@ -1,0 +1,6 @@
+        /* 태블릿 1024px */
+        @media all and (max-width:1024px) {
+            div {
+                background-color: green;
+            }
+        }

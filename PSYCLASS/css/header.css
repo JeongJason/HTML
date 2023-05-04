@@ -24,18 +24,29 @@ header{
     /* border: 1px solid; */
     height: 80px;
     line-height: 80px;
-    font-size: 20px;
+    font-size: 23px;
 }
 .left--header>nav>.first--depth>li{
     margin: 0px 15px;
+    position: relative;
 }
 .left--header>nav>.first--depth>li>a{}
 .left--header>nav>.first--depth>li>.second--depth{
     display: none;
+    font-size: 20px;
+    position: absolute;
+    left: -30px;
+    border-radius: 25px;
 }
 .left--header>nav>.first--depth:hover .second--depth{
     display: block;
+    background-color: aliceblue;
+    width: 150px;
+    text-align: center;    
+    pointer-events: auto;
+    opacity: 0.8;
 }
+
 .left--header>nav>.first--depth>li>.second--depth>li{}
 .left--header>nav>.first--depth>li>.second--depth>li>a{}
 .right--header{
@@ -57,6 +68,13 @@ header{
 }
 .right--header>form>button{
     position: absolute;
+    left: 82%;
+    top: 25px;
+    border: 0px;
+    background-color: white;
+}
+.right--header>form>button>span{
+    border: 0px;
 }
 .right--header>.login{
     /* border: 1px solid black; */

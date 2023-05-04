@@ -1,5 +1,5 @@
 footer{
-    height: 500px;
+    height: 600px;
     /* border-top: 1px solid lightgray; */
     background-color: darkslategray;
 }
@@ -55,3 +55,18 @@ footer>.foot--middle>.middle--right{
     color: white;
     font-size: 20px;
 }
+footer>.foot--bottom{
+    align-content: center;
+    /* border: 1px solid yellow; */
+    height: 200px;
+}
+footer>.foot--bottom>div{
+    /* border: 1px solid red; */
+    padding: 0 500px;
+    text-align: center;
+    color: white;
+}
+footer>.foot--bottom>div>a{
+    /* border: 1px solid; */
+}
+footer>.foot--bottom>div>a>img{}
